@@ -1,10 +1,10 @@
 # SWCUnet
 
-A Skeleton Weighted multi-Channel U-net (SWCUnet) model prototyped for neurite segmentation facilitating automatic neuron morphology reconstruction, based on my work developing a full image processing and reconstruction pipeline for our novel SMART imaging system.
+A *Skeleton Weighted multi-Channel U-net* (SWCUnet) model prototyped for neurite segmentation facilitating automatic neuron morphology reconstruction, based on my work developing a full image processing and reconstruction pipeline for our novel SMART imaging system.
 
 * Chen H, **Huang T**, Yang Y, ... & Guo Z V (2021). Sparse imaging and reconstruction tomography for high-speed high-resolution whole-brain imaging. *Cell Reports Methods*, 1(6), 100089.
+https://doi.org/10.1016/j.crmeth.2021.100089
 
-<https://doi.org/10.1016/j.crmeth.2021.100089>
 No demo data included in this repository. Data availability please contact the Correspondence author.
 
 ## Acknowledgement
@@ -20,5 +20,10 @@ Single axonal signal usually appears in “dotted”, instead of smoothly contin
 
 * Complete Workflow
 Complete segmentation-based auto-reconstruction workflow illustrated below. [MOST tracing](https://doi.org/10.1016/j.neuroimage.2013.10.036) is a commonly used auto-reconstruction algorithm.
+
+* Model Architecture
+
+## Model Performance
+SWCUnet-based auto-reconstruction achieved close to manual tracing result (**0.80** F1-score, see one example test volume below), **24%** higher than auto-reconstruction based on raw data. 
 
 
