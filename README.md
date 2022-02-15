@@ -13,12 +13,19 @@ Baseline model referencing the DeepMACT system:
 
 ## Model Design
 * Multi-Channel Input
+
 Given the sparsity characteristic of our signal, 3D image volume was projected to the X, Y, Z direction, respectively, to enable an effective training utilizing a 2D U-net architecture, though multiple channel of initial compression was tested, with n = 32 resulting the best outcome. Huge computation resource and time was saved while still achieving good performance.
  
 * Skeleton Weighted Loss Function
+
 Single axonal signal usually appears in “dotted”, instead of smoothly continuous, curve due to its biological nature (<1 um thinness in diameter but with sudden swelling at widely distributed bouton sites). To enhance the continuity of segmentation outcome, which is crucial for the following auto-reconstruction, extra weight was added to “skeleton” pixels among all foreground pixels (5-times weight gave the best performance according to experiments).
 
+<p align="center">
+  <img src="https://github.com/Huangt19150/swc-unet/blob/main/figs/fig_design.png">
+</p>
+
 * Complete Workflow
+
 Complete segmentation-based auto-reconstruction workflow illustrated below. [MOST tracing](https://doi.org/10.1016/j.neuroimage.2013.10.036) is a commonly used auto-reconstruction algorithm.
 
 * Model Architecture
