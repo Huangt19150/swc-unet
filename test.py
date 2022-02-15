@@ -36,36 +36,3 @@ if flag_test_3d:
     mode = 'average'
     probsvol_collect = model.test_3d(testLoader, labelPath_3d, settings, mode, savePath)
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
