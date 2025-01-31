@@ -45,4 +45,5 @@ SWCUnet-based auto-reconstruction achieved close to manual tracing result (**0.8
   <img src="https://github.com/Huangt19150/swc-unet/blob/main/figs/fig_result.png">
 </p>
 
+Full details see [publication](https://oversea.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2020&filename=SJJP202003005&uniplatform=OVERSEAS_EN&v=1u0hwPQrEyj5ZrdaXyKcDV9V_LDJpB4sEWmvdlv1Rp84q9wcyZ2F9qGS7GPAOc8c).
 
